@@ -1,1 +1,1 @@
-module.exports = ""
+module.exports = "mongodb+srv://semana:semana@cluster0-20jl0.mongodb.net/test?retryWrites=true&w=majority"
