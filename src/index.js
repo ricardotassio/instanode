@@ -7,7 +7,9 @@ const app = express()
 const server = require('http').Server(app)
 const io = require('socket.io')(server)
 
-mongoose.connect('mongodb+srv://semana:semana@cluster0-20jl0.mongodb.net/test?retryWrites=true&w=majority', {
+const databaseConfig = require('../src/config/database')
+
+mongoose.connect(databaseConfig, {
     useNewUrlParser: true
 })
 
